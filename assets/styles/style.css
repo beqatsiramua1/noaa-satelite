@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+    max-width: 1900px;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+header.header {
+    width: 100%;
+    padding: 1rem 0rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    transition: all .4s;
+}
+
+.close-navbar svg {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+.navbar.show {
+    top: 0;
+    visibility: visible;
+}
+
+.close.show {
+    visibility: visible;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 2px 25px #000;
+    z-index: 99999999;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container img {
+    height: 10rem;
+}
+
+.logo-img.fixed-img {
+    height: 7rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* SECTION 1 */
+.main-header {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-header-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin-right: 12rem;
+}
+
+.title {
+    font-size: 9rem;
+    font-weight: bold;
+}
+
+.header-img img {
+    height: 70rem;
+    width: 50rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 4rem;
+    color: #787878
+}
+
+.section-description {
+    margin-top: 3rem;
+}
+
+.section-descr {
+    color: #353535;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2.3rem;
+}
+
+.noaa-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noa-images img {
+    width: 35rem;
+    height: 35rem;
+}
+
+.items-title {
+    margin-bottom: 1rem;
+}
+
+.items-title p, .items-title  {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.images-from-satelites {
+    margin-top: 3.5rem;
+}
+
+.images-from-noaa-satelite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-from-noaa-satelite img {
+    width: 32rem;
+    height: 32rem;
+    margin-bottom: 2.5rem;
+}
+
+.orbitron {
+    margin-top: 2rem;
+}
+
+.orbitron-program {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.orbitron-images-containe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oribtron-images img {
+    width: 45rem;
+    height: 45rem;
+}
+
+.project-details {
+    margin-top: 2.5rem;
+}
+
+.sdr-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sdr-images img {
+    width: 45rem;
+    height: 45rem;
+}
+
+
+/* SECTION 2 */
+.section--2 {
+    background-color: #F7F7F7;
+}
+
+.section-2-description {
+    margin-top: 4rem;
+}
+
+.swiper-slide img {
+    width: 45rem;
+    height: 50rem;
+}
+
+/* SECTION 3 */
+.section--3 {
+    background-color: #fff;
+}
+
+.section-3-descr {
+    margin-top: 2.5rem;
+}
+
+.team-member {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.member-image img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+
+.member {
+    margin: 0 10rem;
+    text-align: center;
+}
+
+.member-name {
+    margin-top: 1.6rem;
+}
+
+.member-name p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* SECTION 4 */
+.section--4 {
+    background-color: #F7F7F7;
+}
+
+.section-4-descr {
+    margin-top: 2.5rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1569px) {
+    .container {
+        width: 1300px;
+    }
+
+    html {
+        font-size: 60%;
+    }
+
+    .noa-images img {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .oribtron-images img, .sdr-images img {
+        width: 42rem;
+        height: 42rem;
+    }
+
+    .swiper-slide img {
+        width: 42rem;
+        height: 48rem;
+    }
+}
+
+@media screen and (max-width: 1358px) {
+    .container {
+        width: 1100px;
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+    .title {
+        font-size: 7rem;
+    }
+
+    .noa-images img {
+        width: 30rem;
+    }
+
+    .image-from-noaa-satelite img {
+        width: 40rem;
+    }
+
+    .oribtron-images img, .sdr-images img, .swiper-slide img {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .container {
+        width: 992px;
+    }
+    
+    html {
+        font-size: 53%;
+    }
+
+    .noaa-images {
+        flex-wrap: wrap;
+    }
+
+    .noa-images img {
+        width: 36rem;
+        height: 36rem;
+    }
+
+    .image-from-noaa-satelite img {
+        width: 35rem;
+    }
+
+    .oribtron-images img, .sdr-images img, .swiper-slide img {
+        width: 35rem;
+        height: 38rem;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    .container {
+        width: 800px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .navbar {
+        background-color: #5c5c5c;
+        position: fixed;
+        left: 0;
+        top: -500px;
+        width: 100%;
+        height: 30rem;
+        padding: 2rem 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        height: 100%;
+    }
+
+    .nav-item {
+        text-align: left;
+    }
+
+    .nav-link {
+        color: #f7f7f7;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .main-header-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-img img {
+        width: 80rem;
+    }
+
+    .title {
+        font-size: 8rem;
+    }
+
+    .header-title {
+        margin-right: 0;
+        margin-top: 8rem;
+    }
+
+    .header-img {
+        margin-top: -3rem;
+    }
+
+    .noa-images, .oribtron-images, .sdr-images {
+        margin-bottom: 1rem;
+    }
+
+    .noa-images img, .image-from-noaa-satelite img, .oribtron-images img, .sdr-images img {
+        width: 45rem;
+    }
+
+    .orbitron-images-containe, .sdr-container {
+        flex-wrap: wrap;
+    }
+
+    .swiper-slide img {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .container {
+        width: 550px;
+    }
+
+    .html {
+        font-size: 45%;
+    }
+
+    .header-img img {
+        width: 65rem;
+    }
+
+    .title {
+        font-size: 7rem;
+    }
+
+    .noa-images img , .image-from-noaa-satelite img, .oribtron-images img, .sdr-images img{
+        width: 60rem;
+    }
+
+    .noaa-images, .images-from-noaa-satelite, .orbitron-images-containe, .sdr-container {
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 45rem;
+    }
+
+    .member-image img {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 400px;
+    }
+
+    html {
+        font-size: 43%;
+    }
+
+    .header-img {
+        margin-top: -15rem;
+    }
+
+    .team-members {
+        flex-wrap: wrap;
+    }
+
+    .member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .member-name {
+        margin-left: 1rem;
+    }
+}
